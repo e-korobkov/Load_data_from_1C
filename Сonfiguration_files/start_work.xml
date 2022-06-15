@@ -1,0 +1,24 @@
+<file>
+	<function>update date last download
+		<databases_tables>last_download</databases_tables>
+		<tables_type>directories</tables_type>
+		<field_to_delete>last_download</field_to_delete>
+		<columns_info>
+			<table_name>text</table_name>
+			<last_update>date</last_update>
+		</columns_info>
+		<function_text></function_text>
+	</function>
+	<function>actual_date.py
+		<databases_tables>actual_date_1c</databases_tables>
+		<tables_type>directories</tables_type>
+		<field_to_delete>actual_date_1c</field_to_delete>
+		<convert_data>actual_date_1c</convert_data>
+		<columns_info>
+			<actual_date_1c>timestamp without time zone</actual_date_1c>
+		</columns_info>
+		<function_text>
+			table = actual_date_1c.make_call()
+		</function_text>
+	</function>
+</file>
