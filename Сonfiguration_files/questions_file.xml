@@ -1,0 +1,835 @@
+<Requests>
+    <description>
+        История изменения менеджера
+        <databases_tables>managers_of_partners</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>date_change</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <date_change>date</date_change>
+          <partner_guid>text</partner_guid>
+          <manager_id>text</manager_id>
+        </columns_info>
+        <text_request>
+         ВЫБРАТЬ
+         ПРЕДСТАВЛЕНИЕ(ИсторияИзмененияМенеджеров.Период) КАК date_change,
+         ПРЕДСТАВЛЕНИЕ(ИсторияИзмененияМенеджеров.Партнер.ЛБ_Гуид) КАК partner_guid,
+         ПРЕДСТАВЛЕНИЕ(ИсторияИзмененияМенеджеров.Менеджер.Ссылка) КАК manager_id
+         ИЗ
+         РегистрСведений.ИсторияИзмененияМенеджеров КАК ИсторияИзмененияМенеджеров
+         ГДЕ
+         ИсторияИзмененияМенеджеров.Период >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Заказы покупателей с расшифровкой
+        <databases_tables>сustomer_orders</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <nomenclature_guid>text</nomenclature_guid>
+          <quantity>numeric</quantity>
+          <type_price_guid>text</type_price_guid>
+          <price>numeric</price>
+          <amount>numeric</amount>
+          <nds_rate>text</nds_rate>
+          <amount_nds>numeric</amount_nds>
+          <percent_manual_disc>numeric</percent_manual_disc>
+          <amount_manual_disc>numeric</amount_manual_disc>
+          <percent_auto_disc>numeric</percent_auto_disc>
+          <amount_auto_disc>numeric</amount_auto_disc>
+          <cancel_reason_guid>text</cancel_reason_guid>
+          <link_key>numeric</link_key>
+          <row_cancel>text</row_cancel>
+          <nom_dialing_code_id>text</nom_dialing_code_id>
+          <partner_guid>text</partner_guid>
+          <manager_id>text</manager_id>
+          <status>text</status>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Количество) КАК quantity,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.ВидЦены.ЛБ_Гуид) КАК type_price_guid,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Сумма) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.СтавкаНДС) КАК nds_rate,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.СуммаНДС) КАК amount_nds,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.ПроцентРучнойСкидки) КАК percent_manual_disc,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.СуммаРучнойСкидки) КАК amount_manual_disc,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.ПроцентАвтоматическойСкидки) КАК percent_auto_disc,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.СуммаАвтоматическойСкидки) КАК amount_auto_disc,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.ПричинаОтмены.ЛБ_Гуид) КАК cancel_reason_guid,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.КлючСвязи) КАК link_key,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Отменено) КАК row_cancel,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.НоменклатураНабора.Код) КАК nom_dialing_code_id,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.Партнер.ЛБ_Гуид) КАК partner_guid,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.Менеджер.ФизическоеЛицо.Код) КАК manager_id,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.Статус) КАК status,
+        ПРЕДСТАВЛЕНИЕ(ЗаказКлиентаТовары.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.ЗаказКлиента.Товары КАК ЗаказКлиентаТовары
+        ГДЕ
+        ЗаказКлиентаТовары.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Реализация с расшифровкой
+        <databases_tables>implementation</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+            <guid>text</guid>
+            <date_change>date</date_change>
+            <document_number>text</document_number>
+            <document_date>date</document_date>
+            <nomenclature_guid>text</nomenclature_guid>
+            <type_price_guid>text</type_price_guid>
+            <quantity>numeric</quantity>
+            <price>numeric</price>
+            <percent_manual_disc>numeric</percent_manual_disc>
+            <percent_auto_disc>numeric</percent_auto_disc>
+            <amount>numeric</amount>
+            <nds_rate>text</nds_rate>
+            <link_key>text</link_key>
+            <foundation_guid>text</foundation_guid>
+            <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.ВидЦены.ЛБ_Гуид) КАК type_price_guid,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Количество) КАК quantity,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.ПроцентРучнойСкидки) КАК percent_manual_disc,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.ПроцентАвтоматическойСкидки) КАК percent_auto_disc,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Сумма) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.СтавкаНДС) КАК nds_rate,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.КлючСвязи) КАК link_key,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.ЗаказКлиента.ЛБ_Гуид) КАК foundation_guid,
+        ПРЕДСТАВЛЕНИЕ(РеализацияТоваровУслугТовары.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
+        ГДЕ
+        РеализацияТоваровУслугТовары.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Свойства номенклатуры
+        <databases_tables>product_features</databases_tables>
+        <tables_type>directories</tables_type>
+        <relevance_time>None</relevance_time>
+        <field_to_delete>None</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <property>text</property>
+          <property_values>text</property_values>
+          <delete>text</delete>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(НоменклатураДополнительныеРеквизиты.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(НоменклатураДополнительныеРеквизиты.Свойство) КАК property,
+        ПРЕДСТАВЛЕНИЕ(НоменклатураДополнительныеРеквизиты.Значение) КАК property_values,
+        ПРЕДСТАВЛЕНИЕ(НоменклатураДополнительныеРеквизиты.Ссылка.ПометкаУдаления) КАК delete
+        ИЗ
+        Справочник.Номенклатура.ДополнительныеРеквизиты КАК НоменклатураДополнительныеРеквизиты
+        ГДЕ
+        НоменклатураДополнительныеРеквизиты.Свойство.Наименование <![CDATA[<>]]> "Сертификат присоединенный файл"
+        </text_request>
+  </description>
+    <description>
+        Отчет о розничных продажах С расшифровки
+        <databases_tables>retail_sales_report</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <nomenclature_guid>text</nomenclature_guid>
+          <document_date>date</document_date>
+          <nomenclature_guid>text</nomenclature_guid>
+          <quantity>numeric</quantity>
+          <price>numeric</price>
+          <amount>numeric</amount>
+          <manual_discount_percentage>numeric</manual_discount_percentage>
+          <partner_guid>text</partner_guid>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Количество) КАК quantity,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Сумма) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.ПроцентРучнойСкидки) КАК manual_discount_percentage,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Партнер.ЛБ_Гуид) КАК partner_guid,
+        ПРЕДСТАВЛЕНИЕ(ОтчетОРозничныхПродажахТовары.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.ОтчетОРозничныхПродажах.Товары КАК ОтчетОРозничныхПродажахТовары
+        ГДЕ
+        ОтчетОРозничныхПродажахТовары.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Возврат товаров от клиента c расшифровкой
+        <databases_tables>customer_refund</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <nomenclature_guid>text</nomenclature_guid>
+          <quantity>numeric</quantity>
+          <price>numeric</price>
+          <amount>numeric</amount>
+          <line_number>numeric</line_number>
+          <implementation_guid>text</implementation_guid>
+          <implementation_date>date</implementation_date>
+          <check_guid>text</check_guid>
+          <check_date>date</check_date>
+          <customer_guid>text</customer_guid>
+          <customer_date>date</customer_date>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Количество) КАК quantity,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Сумма) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.НомерСтроки) КАК line_number,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.ДокументРеализации.ЛБ_Гуид) КАК implementation_guid,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ДокументРеализации.Дата) КАК implementation_date,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ЧекККМ.ЛБ_Гуид) КАК check_guid,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ЧекККМ.Дата) КАК check_date,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ДокументРеализации.ЗаказКлиента.ЛБ_Гуид) КАК customer_guid,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.ДокументРеализации.ЗаказКлиента.Дата) КАК customer_date,
+        ПРЕДСТАВЛЕНИЕ(ВозвратТоваровОтКлиентаТовары.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.ВозвратТоваровОтКлиента.Товары КАК ВозвратТоваровОтКлиентаТовары
+        ГДЕ
+        ВозвратТоваровОтКлиентаТовары.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Счета на оплату
+        <databases_tables>payment_invoice</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <amount>numeric</amount>
+          <foundation_guid>text</foundation_guid>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.СуммаДокумента) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.ДокументОснование.ЛБ_Гуид) КАК foundation_guid,
+        ПРЕДСТАВЛЕНИЕ(СчетНаОплатуКлиенту.Проведен) КАК held
+        ИЗ
+        Документ.СчетНаОплатуКлиенту КАК СчетНаОплатуКлиенту
+        ГДЕ
+        СчетНаОплатуКлиенту.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Акт выполненных работ
+        <databases_tables>statement_of_work_performed</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <foundation_guid>text</foundation_guid>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <nomenclature_guid>text</nomenclature_guid>
+          <quantity>numeric</quantity>
+          <price>numeric</price>
+          <amount>numeric</amount>
+          <row_number>numeric</row_number>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Ссылка.ЗаказКлиента.ЛБ_Гуид) КАК foundation_guid,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Количество) КАК quantity,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Сумма) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.КодСтроки) КАК row_number,
+        ПРЕДСТАВЛЕНИЕ(АктВыполненныхРаботУслуги.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.АктВыполненныхРабот.Услуги КАК АктВыполненныхРаботУслуги
+        ГДЕ
+        АктВыполненныхРаботУслуги.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Поступление Безналичных Денежных Средств
+        <databases_tables>receipt_of_non_cash_funds</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <foundation_guid>text</foundation_guid>
+          <partner_guid>text</partner_guid>
+          <row_number>numeric</row_number>
+          <amount>numeric</amount>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.ОснованиеПлатежа.ЛБ_Гуид) КАК foundation_guid,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Партнер.ЛБ_Гуид) КАК partner_guid,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.НомерСтроки) КАК row_number,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.СуммаВзаиморасчетов) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.ПоступлениеБезналичныхДенежныхСредств.РасшифровкаПлатежа КАК ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа
+        ГДЕ
+        ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.СтатьяДвиженияДенежныхСредств.Наименование = "Поступление оплаты от клиента (товары, работы, услуги)"
+        И ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Списание Безналичных Денежных Средств
+        <databases_tables>write_off_of_non_cash_funds</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <amount>numeric</amount>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.СуммаВзаиморасчетов) КАК amount,
+        ПРЕДСТАВЛЕНИЕ(СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.СписаниеБезналичныхДенежныхСредств.РасшифровкаПлатежа КАК СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа
+        ГДЕ
+        СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.СтатьяДвиженияДенежныхСредств.Наименование = "Возврат аванса клиенту (продажа товаров, работ, услуг)"
+        И СписаниеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Бизнес регионы
+        <databases_tables>business_regions</databases_tables>
+        <tables_type>directories</tables_type>
+        <relevance_time>None</relevance_time>
+        <field_to_delete>None</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <business_region_id>text</business_region_id>
+          <deleted>text</deleted>
+          <parents_guid>text</parents_guid>
+          <meaning_geographic_region>text</meaning_geographic_region>
+          <geographic_region>text</geographic_region>
+          <code_classifier>text</code_classifier>
+          <yandex_region_id>text</yandex_region_id>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.Наименование) КАК business_region_id,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.ПометкаУдаления) КАК deleted,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.Родитель.ЛБ_Гуид) КАК parents_guid,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.ЗначениеГеографическогоРегиона) КАК meaning_geographic_region,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.ГеографическийРегион) КАК geographic_region,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионы.CRM_КодПоКлассификатору) КАК code_classifier,
+        ПРЕДСТАВЛЕНИЕ(БизнесРегионыДополнительныеРеквизиты.Значение) КАК yandex_region_id
+        ИЗ
+        Справочник.БизнесРегионы КАК БизнесРегионы
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.БизнесРегионы.ДополнительныеРеквизиты КАК БизнесРегионыДополнительныеРеквизиты
+            ПО (БизнесРегионы.Ссылка = БизнесРегионыДополнительныеРеквизиты.Ссылка)
+                И (БизнесРегионыДополнительныеРеквизиты.Свойство.Имя = "Yandex_id_f5043085650445078dba96ffd332654d")
+        </text_request>
+    </description>
+    <description>
+        Менеджера сводно
+        <databases_tables>managers</databases_tables>
+        <tables_type>directories</tables_type>
+        <relevance_time>None</relevance_time>
+        <field_to_delete>None</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <manager_id>text</manager_id>
+          <name>text</name>
+          <e_mail>text</e_mail>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ РАЗЛИЧНЫЕ
+        ЗаказКлиента.Партнер.ОсновнойМенеджер.ФизическоеЛицо.Код КАК manager_id,
+        ЗаказКлиента.Партнер.ОсновнойМенеджер.ФизическоеЛицо.Наименование КАК name
+        ПОМЕСТИТЬ ВременнаяТаблица
+        ИЗ
+        Документ.ЗаказКлиента КАК ЗаказКлиента
+
+        ОБЪЕДИНИТЬ
+
+        ВЫБРАТЬ РАЗЛИЧНЫЕ
+        Партнеры.ОсновнойМенеджер.ФизическоеЛицо.Код,
+        Партнеры.ОсновнойМенеджер.ФизическоеЛицо.Наименование
+        ИЗ
+        Справочник.Партнеры КАК Партнеры
+        ;
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ВЫБРАТЬ РАЗЛИЧНЫЕ
+        ПользователиКонтактнаяИнформация.Ссылка.ФизическоеЛицо.Код КАК manager_id,
+        ПользователиКонтактнаяИнформация.АдресЭП КАК e_mail
+        ПОМЕСТИТЬ ВременнаяТаблица2
+        ИЗ
+        Справочник.Пользователи.КонтактнаяИнформация КАК ПользователиКонтактнаяИнформация
+        ГДЕ
+        ПользователиКонтактнаяИнформация.АдресЭП <![CDATA[<>]]>""
+        ;
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.manager_id) КАК manager_id,
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.name) КАК name,
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица2.e_mail) КАК e_mail
+        ИЗ
+        ВременнаяТаблица2 КАК ВременнаяТаблица2
+        ЛЕВОЕ СОЕДИНЕНИЕ ВременнаяТаблица КАК ВременнаяТаблица
+        ПО (ВременнаяТаблица2.manager_id = ВременнаяТаблица.manager_id)
+        ГДЕ
+        ВременнаяТаблица.manager_id <![CDATA[<>]]> ""
+        </text_request>
+    </description>
+    <description>
+        Номенклатура
+        <databases_tables>nomenclatures</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <nomenclature_id>text</nomenclature_id>
+          <name>text</name>
+          <deleted>text</deleted>
+          <type_of_nomenclature_guid>text</type_of_nomenclature_guid>
+          <parents_guid>text</parents_guid>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.Код) КАК nomenclature_id,
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.Наименование) КАК name,
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.ПометкаУдаления) КАК deleted,
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.ВидНоменклатуры.ЛБ_Гуид) КАК type_of_nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(Номенклатура.Родитель.ЛБ_Гуид) КАК parents_guid
+        ИЗ
+        Справочник.Номенклатура КАК Номенклатура
+        ГДЕ
+        Номенклатура.ЭтоГруппа = ЛОЖЬ
+        И Номенклатура.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Вид цен
+        <databases_tables>type_of_price</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <type_of_price_id>text</type_of_price_id>
+          <deleted>text</deleted>
+          <name>text</name>
+          <status>text</status>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ВидыЦен.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ВидыЦен.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ВидыЦен.Идентификатор) КАК type_of_price_id,
+        ПРЕДСТАВЛЕНИЕ(ВидыЦен.ПометкаУдаления) КАК deleted,
+        ПРЕДСТАВЛЕНИЕ(ВидыЦен.Наименование) КАК name,
+        ПРЕДСТАВЛЕНИЕ(ВидыЦен.Статус) КАК status
+        ИЗ
+        Справочник.ВидыЦен КАК ВидыЦен
+        ГДЕ
+        ВидыЦен.ЭтоГруппа = ЛОЖЬ
+        И ВидыЦен.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Причины отмены заказов покупателей
+        <databases_tables>cancel_reason</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <name>text</name>
+          <deleted>text</deleted>
+          <overview>text</overview>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ПричиныОтменыЗаказовКлиентов.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ПричиныОтменыЗаказовКлиентов.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ПричиныОтменыЗаказовКлиентов.Наименование) КАК name,
+        ПРЕДСТАВЛЕНИЕ(ПричиныОтменыЗаказовКлиентов.ПометкаУдаления) КАК deleted,
+        ПРЕДСТАВЛЕНИЕ(ПричиныОтменыЗаказовКлиентов.Описание) КАК overview
+        ИЗ
+        Справочник.ПричиныОтменыЗаказовКлиентов КАК ПричиныОтменыЗаказовКлиентов
+        ГДЕ
+        ПричиныОтменыЗаказовКлиентов.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Партнеры
+        <databases_tables>partners</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <name>text</name>
+          <partner_id>text</partner_id>
+          <deleted>text</deleted>
+          <business_region_guid>text</business_region_guid>
+          <manager_id>text</manager_id>
+          <creation_date>date</creation_date>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(Партнеры.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.Наименование) КАК name,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.Код) КАК partner_id,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.ПометкаУдаления) КАК deleted,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.БизнесРегион.ЛБ_Гуид) КАК business_region_guid,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.ОсновнойМенеджер.ФизическоеЛицо.Код) КАК manager_id,
+        ПРЕДСТАВЛЕНИЕ(Партнеры.ДатаРегистрации) КАК creation_date
+        ИЗ
+        Справочник.Партнеры КАК Партнеры
+        ГДЕ
+        Партнеры.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Все сегменты и вся номенклатура
+        <databases_tables>segments_nomenclature</databases_tables>
+        <tables_type>directories</tables_type>
+        <relevance_time>None</relevance_time>
+        <field_to_delete>None</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <second_level_name>text</second_level_name>
+          <second_level_guid>text</second_level_guid>
+          <name>text</name>
+          <guid>text</guid>
+          <nomenclature_guid>text</nomenclature_guid>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        НоменклатураСегмента.Сегмент.Родитель.Наименование КАК ВторойУровень,
+        НоменклатураСегмента.Сегмент.Родитель.ЛБ_Гуид КАК ВторойУровеньГуид,
+        НоменклатураСегмента.Сегмент.ЛБ_Гуид КАК СегментГуид,
+        НоменклатураСегмента.Сегмент.Наименование КАК СегментНаименование,
+        НоменклатураСегмента.Номенклатура.ЛБ_Гуид КАК НоменклатураВСегментеГуид
+        ПОМЕСТИТЬ ВременнаяТаблица
+        ИЗ
+        РегистрСведений.НоменклатураСегмента КАК НоменклатураСегмента
+        ГДЕ
+        НоменклатураСегмента.Сегмент.Родитель.Родитель.Наименование = "для BI системы"
+        ОБЪЕДИНИТЬ ВСЕ
+        ВЫБРАТЬ
+        NULL,
+        NULL,
+        НоменклатураСегмента.Сегмент.ЛБ_Гуид,
+        НоменклатураСегмента.Сегмент.Наименование,
+        НоменклатураСегмента.Номенклатура.ЛБ_Гуид
+        ИЗ
+        РегистрСведений.НоменклатураСегмента КАК НоменклатураСегмента
+        ГДЕ
+        НоменклатураСегмента.Сегмент.Родитель.Наименование = "для BI системы"
+        ;
+        ////////////////////////////////////////////////////////////////////////////////
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.ВторойУровень) КАК second_level_name,
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.ВторойУровеньГуид) КАК second_level_guid,
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.СегментНаименование) КАК name,
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.СегментГуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ВременнаяТаблица.НоменклатураВСегментеГуид) КАК nomenclature_guid
+        ИЗ
+        ВременнаяТаблица КАК ВременнаяТаблица
+        </text_request>
+    </description>
+    <description>
+        Цены поставщиков
+        <databases_tables>supplier_prices</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <nomenclature_guid>text</nomenclature_guid>
+          <price>numeric</price>
+          <document_date>date</document_date>
+          <partner_guid>text</partner_guid>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Ссылка.Партнер.ЛБ_Гуид) КАК partner_guid,
+        ПРЕДСТАВЛЕНИЕ(РегистрацияЦенНоменклатурыПоставщикаТовары.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.РегистрацияЦенНоменклатурыПоставщика.Товары КАК РегистрацияЦенНоменклатурыПоставщикаТовары
+        ГДЕ
+        РегистрацияЦенНоменклатурыПоставщикаТовары.Номенклатура.Код <![CDATA[<>]]> ""
+        И РегистрацияЦенНоменклатурыПоставщикаТовары.Ссылка.Дата >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Переоценка номенклатуры
+        <databases_tables>supplier_our_prices</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <document_number>text</document_number>
+          <document_date>date</document_date>
+          <nomenclature_guid>text</nomenclature_guid>
+          <packing_code>numeric</packing_code>
+          <type_price_guid>text</type_price_guid>
+          <price>numeric</price>
+          <held>text</held>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Ссылка.Номер) КАК document_number,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Ссылка.Дата) КАК document_date,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Номенклатура.ЛБ_Гуид) КАК nomenclature_guid,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Упаковка.Код) КАК packing_code,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.ВидЦены.ЛБ_Гуид) КАК type_price_guid,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Цена) КАК price,
+        ПРЕДСТАВЛЕНИЕ(УстановкаЦенНоменклатурыТовары.Ссылка.Проведен) КАК held
+        ИЗ
+        Документ.УстановкаЦенНоменклатуры.Товары КАК УстановкаЦенНоменклатурыТовары
+        ГДЕ
+        УстановкаЦенНоменклатурыТовары.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        И УстановкаЦенНоменклатурыТовары.Цена <![CDATA[<>]]> ""
+        </text_request>
+    </description>
+    <description>
+        Контакты Партнеров
+        <databases_tables>contact_partners</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <date_change>date</date_change>
+          <e_mail>text</e_mail>
+          <delete>text</delete>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ПартнерыКонтактнаяИнформация.Ссылка.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(ПартнерыКонтактнаяИнформация.Ссылка.ЛБ_ДатаИзменения) КАК date_change,
+        ПРЕДСТАВЛЕНИЕ(ПартнерыКонтактнаяИнформация.АдресЭП) КАК e_mail,
+        ПРЕДСТАВЛЕНИЕ(ПартнерыКонтактнаяИнформация.Ссылка.ПометкаУдаления) КАК delete
+        ИЗ
+        Справочник.Партнеры.КонтактнаяИнформация КАК ПартнерыКонтактнаяИнформация
+        ГДЕ
+        ПартнерыКонтактнаяИнформация.АдресЭП <![CDATA[<>]]> ""
+        И ПартнерыКонтактнаяИнформация.Ссылка.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Контакты Контактных лиц Партнеров
+        <databases_tables>manager_partners</databases_tables>
+        <tables_type>directories</tables_type>
+        <relevance_time>None</relevance_time>
+        <field_to_delete>None</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <e_mail>text</e_mail>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(КонтактныеЛицаПартнеровКонтактнаяИнформация.Ссылка.Владелец.ЛБ_Гуид) КАК guid,
+        ПРЕДСТАВЛЕНИЕ(КонтактныеЛицаПартнеровКонтактнаяИнформация.АдресЭП) КАК e_mail
+        ИЗ
+        Справочник.КонтактныеЛицаПартнеров.КонтактнаяИнформация КАК КонтактныеЛицаПартнеровКонтактнаяИнформация
+        ГДЕ
+        КонтактныеЛицаПартнеровКонтактнаяИнформация.АдресЭП <![CDATA[<>]]> ""
+        </text_request>
+    </description>
+    <description>
+        Виды номенклатуры
+        <databases_tables>type_of_nomenclature</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <guid>text</guid>
+          <name>text</name>
+          <date_change>date</date_change>
+          <parent_guid>text</parent_guid>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+        ПРЕДСТАВЛЕНИЕ(ВидыНоменклатуры.ЛБ_Гуид) КАК guid,
+	    ПРЕДСТАВЛЕНИЕ(ВидыНоменклатуры.Наименование) КАК name,
+	    ПРЕДСТАВЛЕНИЕ(ВидыНоменклатуры.ЛБ_ДатаИзменения) КАК date_change,
+	    ПРЕДСТАВЛЕНИЕ(ВидыНоменклатуры.Родитель.ЛБ_Гуид) КАК parent_guid
+        ИЗ
+	    Справочник.ВидыНоменклатуры КАК ВидыНоменклатуры
+        ГДЕ
+	    ВидыНоменклатуры.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+    <description>
+        Иерархия номенклатуры
+        <databases_tables>nomenclature_hierarchy</databases_tables>
+        <tables_type>documents</tables_type>
+        <relevance_time>10000</relevance_time>
+        <field_to_delete>group_guid</field_to_delete>
+        <change_data>None</change_data>
+        <sign_of>None</sign_of>
+        <columns_info>
+          <group_guid>text</group_guid>
+          <group_name>text</group_name>
+          <date_change_group>date</date_change_group>
+          <held_group>text</held_group>
+          <parent_guid>text</parent_guid>>
+        </columns_info>
+        <text_request>
+        ВЫБРАТЬ
+	    ПРЕДСТАВЛЕНИЕ(Номенклатура.ЛБ_Гуид) КАК group_guid,
+	    ПРЕДСТАВЛЕНИЕ(Номенклатура.Наименование) КАК group_name,
+	    ПРЕДСТАВЛЕНИЕ(Номенклатура.ЛБ_ДатаИзменения) КАК date_change_group,
+	    ПРЕДСТАВЛЕНИЕ(Номенклатура.ПометкаУдаления) КАК held_group,
+	    ПРЕДСТАВЛЕНИЕ(Номенклатура.Родитель.ЛБ_Гуид) КАК parent_guid
+        ИЗ
+	    Справочник.Номенклатура КАК Номенклатура
+        ГДЕ
+	    Номенклатура.ЭтоГруппа = Истина
+        И Номенклатура.ЛБ_ДатаИзменения >= ЗАМЕНИТЬДАТУ
+        </text_request>
+    </description>
+</Requests>
