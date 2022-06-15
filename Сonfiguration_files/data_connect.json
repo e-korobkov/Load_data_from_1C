@@ -1,0 +1,22 @@
+{
+  "1c": {
+    "login": "user_name",
+    "password": "user_password",
+    "Ref": "base_ref",
+    "Srv": "server_name"
+  },
+  "main_base": {
+    "database": "base_name",
+    "host": "host",
+    "password": "password",
+    "port": "5432",
+    "user": "user_name"
+  },
+  "scheduler": {
+    "period": "interval",
+    "time": 18000
+  },
+  "advanced_settings":{
+    "processes": 3
+  }
+}
