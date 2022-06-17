@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="8cce9abd-ebba-4fb2-8817-2d689941992b">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыКассовойСмены" category="Ref">
+				<xr:TypeId>59f91117-35bb-4ac6-95d6-2d82870cb337</xr:TypeId>
+				<xr:ValueId>256153e4-f617-4061-ba18-04a4d3957759</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыКассовойСмены" category="Manager">
+				<xr:TypeId>e3894c04-fd9a-4a4a-92f1-2ea46b6adb17</xr:TypeId>
+				<xr:ValueId>388b10a5-67dd-4a43-9227-72b4d548165e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыКассовойСмены" category="List">
+				<xr:TypeId>cf5e2b16-c62d-4f89-a5f0-596260371fb2</xr:TypeId>
+				<xr:ValueId>facc6458-10a6-4847-8b60-79ec6b3a28b0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыКассовойСмены</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>6a9a9474-586c-4ca7-844f-2c1df0e7fbe2</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

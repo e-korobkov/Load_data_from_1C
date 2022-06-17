@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="ba84f02b-8dd7-44aa-a61a-7d21e52aea4e">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыЧековККМ" category="Ref">
+				<xr:TypeId>7c3271a2-a253-4feb-8533-7e4acdf88e86</xr:TypeId>
+				<xr:ValueId>6d924ef8-3897-4da0-83fe-ab8483b7a74b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыЧековККМ" category="Manager">
+				<xr:TypeId>f9a78a52-07a8-4b3a-9016-e866dde9d377</xr:TypeId>
+				<xr:ValueId>81aa1fca-965f-4e33-8025-cd6c6a809586</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыЧековККМ" category="List">
+				<xr:TypeId>623951e3-881b-42e7-8e6b-418711390b5b</xr:TypeId>
+				<xr:ValueId>0e60b015-30ed-4d5b-9f09-394490a0a329</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыЧековККМ</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>71ba13b0-5734-4f37-bfc0-33a791b4e7e2</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="38012ea3-b0b0-4494-97de-2e19d2a75869">
+				<InternalInfo/>
+				<Properties>
+					<Name>ТоварЗарезервирован</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>b8d448b2-f4c4-4fef-bd83-69bf834a37d5</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2cb80925-53b4-4106-9808-8b90c1330e02">
+				<InternalInfo/>
+				<Properties>
+					<Name>Отложен</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>238e807a-b6d8-401c-b115-0e10b84a16c1</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="737a8006-8676-4960-889d-98a34ee00385">
+				<InternalInfo/>
+				<Properties>
+					<Name>Пробит</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>8c29b28c-3389-4788-aa0d-03fdff0dcec4</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

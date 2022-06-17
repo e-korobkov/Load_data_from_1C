@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="601b1568-8eea-47a8-a452-611671847ff8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыПлатежейПоАренде" category="Ref">
+				<xr:TypeId>fa3ad356-1347-4a21-ac49-f2a4b87c1a09</xr:TypeId>
+				<xr:ValueId>263f0ebd-1147-4d4b-a33a-bd4e4fada64a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыПлатежейПоАренде" category="Manager">
+				<xr:TypeId>6e329048-6d2a-43bc-aa4a-5fa9b16bd2ab</xr:TypeId>
+				<xr:ValueId>4eae709f-eff4-438b-9df4-8ce444b035c1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыПлатежейПоАренде" category="List">
+				<xr:TypeId>58368ea1-573f-4e53-9474-7c2db6533343</xr:TypeId>
+				<xr:ValueId>d05dc6b6-1c28-45f7-92fb-4b2696e36e78</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыПлатежейПоАренде</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>0f417b95-e06d-41ac-a525-57cec6908b78</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

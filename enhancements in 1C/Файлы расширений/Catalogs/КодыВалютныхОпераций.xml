@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="6cf8199e-3b02-4719-9766-64d0081270c5">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.КодыВалютныхОпераций" category="Object">
+				<xr:TypeId>de615758-51f9-44f2-9e5d-db2ddd498568</xr:TypeId>
+				<xr:ValueId>60ee3bd8-9a32-4b7a-9d15-6603e8d3334b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.КодыВалютныхОпераций" category="Ref">
+				<xr:TypeId>25f98e56-a8af-4382-b36a-56633095161d</xr:TypeId>
+				<xr:ValueId>470903dc-49d5-40e2-967f-8820535a57e6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.КодыВалютныхОпераций" category="Selection">
+				<xr:TypeId>c16b91a0-f8af-4961-a2ae-618c91482527</xr:TypeId>
+				<xr:ValueId>fc40eac9-9bbd-4bd5-90dd-1e5a5f14724d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.КодыВалютныхОпераций" category="List">
+				<xr:TypeId>6fa0cec9-28d1-4090-862b-cd43e1242773</xr:TypeId>
+				<xr:ValueId>5f81ead9-2776-4cd1-a4b9-90ff2a3fe96f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.КодыВалютныхОпераций" category="Manager">
+				<xr:TypeId>804153f1-bed6-4f94-8ff6-82dfd0d65341</xr:TypeId>
+				<xr:ValueId>43de0db2-abdf-4f6a-9cbe-f2b668b01f45</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КодыВалютныхОпераций</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>abb4dd18-0aee-456b-be93-b2e38d946e09</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="17634096-5901-4e85-98c1-0c63c58555fc">
+				<InternalInfo/>
+				<Properties>
+					<Name>НаименованиеПолное</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>5cb888ac-f1ee-421b-8b42-b8166df028c6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

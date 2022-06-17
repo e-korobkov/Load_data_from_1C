@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="c4fd8838-a05d-4c6b-8ea6-cb686dbf90b8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.НазначенияВидовЦен" category="Ref">
+				<xr:TypeId>214e66ac-5929-471d-b6bf-c14e91b23fa1</xr:TypeId>
+				<xr:ValueId>d1a83ccf-3d1e-40d6-9885-854142df0a4a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.НазначенияВидовЦен" category="Manager">
+				<xr:TypeId>6e9c9b51-a62c-4e63-af4b-32d8e08d233e</xr:TypeId>
+				<xr:ValueId>f8611dac-5e6d-40b5-a391-98af5da4ec1b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.НазначенияВидовЦен" category="List">
+				<xr:TypeId>49505ff4-35b9-4f2b-b824-bd8e4b2c988f</xr:TypeId>
+				<xr:ValueId>bf24046f-18e3-4675-8ce2-9e79dc3f4c02</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НазначенияВидовЦен</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>a9ca2751-8948-4117-ac10-4783f81777fb</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="fe3fb6ae-1063-4201-8a76-8aeb64665aa1">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИндивидуальныйДляСклада</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>18f357ad-6bc6-4712-b061-9ce5e4856974</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="52be9684-9979-4777-95b3-6c7284421542">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИндивидуальныйДляПартнера</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>2fa9e530-b9af-4e6e-b5f4-671091fb92e3</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="72962cf0-03e0-4582-84c8-dfa41425a6b6">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИндивидуальныйДляСоглашения</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>9b30f3a2-995f-4e35-8586-5c4d42bcc318</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d0e0233a-ce4a-49de-b26b-3baf1f05c37f">
+				<InternalInfo/>
+				<Properties>
+					<Name>Общий</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>dfbf5ed2-8323-46a6-9956-6d290d87e428</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d2354329-556f-429a-9644-524023cdc491">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИндивидуальныйДляФорматаМагазинов</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>64bccfc6-47c4-44f4-be0b-5763cdb15f9a</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

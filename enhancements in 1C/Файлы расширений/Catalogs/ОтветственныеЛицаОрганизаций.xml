@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="ca3e3dd1-9fbc-4351-b683-26603e64fe91">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ОтветственныеЛицаОрганизаций" category="Object">
+				<xr:TypeId>c37e836b-0cd6-40df-b226-17e75b5a8c3e</xr:TypeId>
+				<xr:ValueId>aa02e474-129d-4660-afc8-4d51e2cb3d1c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ОтветственныеЛицаОрганизаций" category="Ref">
+				<xr:TypeId>26f2bf17-03fa-4d53-a925-090207db2205</xr:TypeId>
+				<xr:ValueId>9ff00e2d-154f-48c0-a8ea-7e0d06930b46</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ОтветственныеЛицаОрганизаций" category="Selection">
+				<xr:TypeId>3ce31b7a-2228-48a0-afc3-34a9d939b103</xr:TypeId>
+				<xr:ValueId>9fb8d0cb-e026-4a9a-b706-f8cdc6c84c16</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ОтветственныеЛицаОрганизаций" category="List">
+				<xr:TypeId>9f784555-9661-4d53-9a00-fe8af4ba23cf</xr:TypeId>
+				<xr:ValueId>640266ee-4f9d-4a83-8158-cca230c0145d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ОтветственныеЛицаОрганизаций" category="Manager">
+				<xr:TypeId>b93453d9-9e03-40f5-b612-f5cb0502faa4</xr:TypeId>
+				<xr:ValueId>8271e140-3774-4ba2-8fd7-67b9e8db8191</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтветственныеЛицаОрганизаций</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>cf617326-1803-4a30-b003-2fea7f38073a</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

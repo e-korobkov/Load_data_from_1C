@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="a7d2defb-b95d-4694-bfce-42ff7f85123e">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПолитикиУчетаСерий" category="Object">
+				<xr:TypeId>c8d05779-b284-4bad-8d8f-fc139f27afa3</xr:TypeId>
+				<xr:ValueId>cde0a56d-934b-4e9b-af16-2eca912f69ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПолитикиУчетаСерий" category="Ref">
+				<xr:TypeId>61e1e28e-ce5b-4085-8a97-56aba5c470d3</xr:TypeId>
+				<xr:ValueId>a1061a6a-30cf-46c5-8d59-bc479dca0f01</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПолитикиУчетаСерий" category="Selection">
+				<xr:TypeId>093e7bb1-5181-4c67-922f-9367f71125f4</xr:TypeId>
+				<xr:ValueId>e311fecb-bb94-4460-9b6d-e4808af12792</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПолитикиУчетаСерий" category="List">
+				<xr:TypeId>b4d21f6d-50eb-496f-ac33-0d585d53328d</xr:TypeId>
+				<xr:ValueId>8a58db82-09aa-4066-b9c5-375e92d87512</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПолитикиУчетаСерий" category="Manager">
+				<xr:TypeId>97bcae68-39b2-4b3b-8c55-b4a6f735c4f4</xr:TypeId>
+				<xr:ValueId>2d5aadb3-06a0-474c-ab73-b2bb4f921075</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПолитикиУчетаСерий</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>7eacf257-079b-44c1-9ffb-45e01a080706</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

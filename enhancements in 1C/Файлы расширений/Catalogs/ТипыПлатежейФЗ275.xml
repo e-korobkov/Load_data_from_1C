@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="b1f067f1-f884-43ea-bcb8-60d1254440d8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ТипыПлатежейФЗ275" category="Object">
+				<xr:TypeId>f26d9320-493a-4aee-a232-bc9ba4650cb1</xr:TypeId>
+				<xr:ValueId>21608825-6686-4870-a99c-8405e6360fe8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ТипыПлатежейФЗ275" category="Ref">
+				<xr:TypeId>05a17e0a-3a12-403f-b468-70062c3afb7d</xr:TypeId>
+				<xr:ValueId>7c407b60-dfc0-49fe-86d7-57684a1832fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ТипыПлатежейФЗ275" category="Selection">
+				<xr:TypeId>f7bd2ed2-a711-4f01-ad29-7fbbf6f5b467</xr:TypeId>
+				<xr:ValueId>36d4ca42-b2e7-4cb5-bcc4-363404f95836</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ТипыПлатежейФЗ275" category="List">
+				<xr:TypeId>464eedac-3497-4db8-b2fa-b19da2518d86</xr:TypeId>
+				<xr:ValueId>fb02ef9c-f8bd-4f16-baff-00f7d357cd84</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ТипыПлатежейФЗ275" category="Manager">
+				<xr:TypeId>7915610a-0a93-4fb2-ae9c-18a13006a6c2</xr:TypeId>
+				<xr:ValueId>9a118464-808a-4571-9f64-1ea1321ac2a8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыПлатежейФЗ275</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>130268e6-e002-4051-829c-04d9e0b3e668</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

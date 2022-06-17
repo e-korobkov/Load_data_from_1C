@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="3d76fa0d-e6fa-4541-8559-3aa7f5d92743">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ВидыЦен" category="Object">
+				<xr:TypeId>4de00147-3f8d-4247-9462-70a7b2fcf08a</xr:TypeId>
+				<xr:ValueId>e2b8be7b-4634-4e69-aafb-274066be7443</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ВидыЦен" category="Ref">
+				<xr:TypeId>b513738e-c244-41c4-9ee8-28d9748ecdc4</xr:TypeId>
+				<xr:ValueId>6e980b8b-3004-4f6c-811d-fe496e1fb68a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ВидыЦен" category="Selection">
+				<xr:TypeId>5b75b8ee-5bc1-44b2-ae51-a1c433ad6fe4</xr:TypeId>
+				<xr:ValueId>c38a8204-a608-437f-89f2-e0087d22e82b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ВидыЦен" category="List">
+				<xr:TypeId>7411032b-8074-4e18-9448-839d50692a70</xr:TypeId>
+				<xr:ValueId>ca9a9dbf-9609-4546-872b-236370e9def4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ВидыЦен" category="Manager">
+				<xr:TypeId>425e8548-e66e-43d8-a071-cc150d109031</xr:TypeId>
+				<xr:ValueId>ece45daa-40c3-4ca2-94cc-87aee989beb3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыЦен</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>1a6593e1-d0c4-428d-af64-b1161601c46b</ExtendedConfigurationObject>
+			<Hierarchical>true</Hierarchical>
+			<DescriptionLength>50</DescriptionLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="b741c301-effb-432c-a2b5-6dab5cb75685">
+				<Properties>
+					<Name>ЛБ_Гуид</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гуид</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForFolderAndItem</Use>
+					<Indexing>Index</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="107a7614-f8ab-412b-999a-fefddd04c03c">
+				<Properties>
+					<Name>ЛБ_ДатаИзменения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата изменения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForFolderAndItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8a057bc3-3f37-49ae-aa07-3c2c5e3cabc9">
+				<InternalInfo/>
+				<Properties>
+					<Name>ТочностьОкругления</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>158e3051-f8b8-4aad-b9b2-048ec389faa8</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаНеотрицательная</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="74574b29-1d59-4dd9-8a1a-706aa4541b61">
+				<InternalInfo/>
+				<Properties>
+					<Name>Статус</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>1d2bf011-0872-4b0a-836f-1f1cac36ad9f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыДействияВидовЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5d9bf823-0f8d-4b7e-9b0e-b881496430b8">
+				<InternalInfo/>
+				<Properties>
+					<Name>Наценка</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>1fb40f0a-e884-485a-bccf-022c3665f19c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="91b1b5f8-8a88-45ef-bf44-127aa444b863">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВспомогательнаяЦена</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7cc80abb-50c8-4891-9105-ac07697c7fcc</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ec212896-0c3e-4eb3-9609-19c094fb3bb5">
+				<InternalInfo/>
+				<Properties>
+					<Name>Идентификатор</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>60ce6002-9125-434e-a885-c105912cd6de</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="54f36652-3bfb-47d1-9894-abec9fda6888">
+				<InternalInfo/>
+				<Properties>
+					<Name>СхемаКомпоновкиДанных</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>635aaa83-cfd5-4bf6-9821-f02dbebd5658</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2cf07050-8f3f-4f7e-8acd-43f12b24469f">
+				<InternalInfo/>
+				<Properties>
+					<Name>Назначение</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>b2269303-43af-4ecc-a307-9692a9ba0177</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.НазначенияВидовЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="15877cb3-2e0c-495d-a7c3-c275b5db9f18">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВалютаЦены</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7a3bb1cf-8b3e-4d0f-bcfd-3290721af2c9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="10432b4c-aff6-4e13-8536-5416c8e061db">
+				<InternalInfo/>
+				<Properties>
+					<Name>ПорогСрабатыванияПриУменьшении</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>5ab5b6c7-5186-4550-afa9-fee0accf6844</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2c6a7ed8-c196-40e1-8283-d73c972be37b">
+				<InternalInfo/>
+				<Properties>
+					<Name>Округлять</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>8a345a47-d3e9-45aa-9411-631bf37ab5b5</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9c912e31-a6d8-4a5e-b8b2-5edd85fd5030">
+				<InternalInfo/>
+				<Properties>
+					<Name>ЦенаВключаетНДС</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>a1c4c007-2fef-4363-97d4-fb6f8d42bc8c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="db6c14a6-8e8c-4981-9cee-4d6f3bf01be8">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИспользоватьПриОптовойПродаже</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>fd0fc873-c990-4b27-aba8-0b431c137a69</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d985eecf-8ce0-4fba-a6ab-e939e5242bab">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИспользоватьПриРозничнойПродаже</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>a5ad99a6-da8d-4f8f-b439-17dfdcc12841</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="240e22d3-d37f-4fc3-a805-67e7de81e79e">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИспользоватьПриПередачеМеждуОрганизациями</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>d3558289-b2dd-419d-9358-1464c46b7059</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2803d137-66fe-44e9-b48f-5f3572988d64">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВариантОкругления</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>9d4fe35a-8b45-46af-82e5-1c5f850812e2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыОкругления</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="15bb448f-40c3-42ee-8a38-c462d2acee9f">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИспользоватьПриПередачеПродукцииДавальцу</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>28d3ae1a-9e39-42fb-a37a-7aa5cc06fe43</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6fe8ffc1-7d2b-4ad1-bcbe-858598568a9e">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИспользоватьПриВыпускеПродукции</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>2a4eced6-5495-4ea4-8c02-95b4da425f6d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="38b04841-6e2e-46be-a8bd-c47cd07379d7">
+				<InternalInfo/>
+				<Properties>
+					<Name>ЗапретитьРедактированиеЦеныЗаПределамиОтбора</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>9385de79-e37d-4b5e-81c9-62eb69ed4706</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="357edc17-394b-4b3d-8076-96ebd0a218be">
+				<InternalInfo/>
+				<Properties>
+					<Name>СпособЗаданияЦены</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>81c638d4-cec1-4d8d-b40d-2b8068b8f117</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СпособыЗаданияЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9c48143a-5993-414d-9281-934051628b18">
+				<InternalInfo/>
+				<Properties>
+					<Name>Формула</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>83d8cc7a-c783-4f25-9ffd-ffd816a1c577</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e3622469-395d-415d-b6ca-ab1adf925773">
+				<InternalInfo/>
+				<Properties>
+					<Name>БазовыйВидЦены</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>d5d0df8e-a617-45fa-9b79-2897a015fcef</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c7bfa2c8-64f3-42e1-9bab-9341d0b0f528">
+				<InternalInfo/>
+				<Properties>
+					<Name>УстанавливатьЦенуПриВводеНаОсновании</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>8bb83bf4-16ca-4973-a859-f25ddf6e92a5</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4cfdaf80-9d37-45d3-8fe0-ccc264892d80">
+				<InternalInfo/>
+				<Properties>
+					<Name>ПорогСрабатывания</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7746f6a0-cfd8-40c9-88ee-ca52d89596b4</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаНеотрицательная</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="096f20a4-8fe0-4870-87fe-4c5dd03fb3a1">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ВидыЦен.ПравилаОкругленияЦены" category="TabularSection">
+						<xr:TypeId>b2befb90-a6bc-4516-ae09-e9d81f2f41e1</xr:TypeId>
+						<xr:ValueId>68114c57-8c7b-4fc9-9113-5c534fec629c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ВидыЦен.ПравилаОкругленияЦены" category="TabularSectionRow">
+						<xr:TypeId>2a30878c-7179-42da-bf9d-1c42df6f2a97</xr:TypeId>
+						<xr:ValueId>18af304b-156f-4a6b-bb0c-37d66fd3a5bc</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ПравилаОкругленияЦены</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7301b27e-d7a4-4f78-9aad-723886f67448</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
