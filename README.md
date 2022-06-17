@@ -6,3 +6,4 @@
 - произведите доработки в 1С согластно описанию в папке "enhancements in 1C";
 - в файле "data_connect.json" папки "Сonfiguration_files" введите свои значения;
 - в файле "questions_file.xml" введите свой текст запроса к 1С.
+- зарегистрируйте компоненты comcntr.dll по инструкции http://www.a-franch.ru/index.php/modules-menu/baza-znanij/73-regcom
